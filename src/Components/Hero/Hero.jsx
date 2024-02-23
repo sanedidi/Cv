@@ -70,7 +70,6 @@ const Hero = () => {
             <button className="hero__btn" onClick={()=>{toggleDrawer(), notify()}}>
               {" "}
               You Need A Site?
-              
             </button>
             <Drawer
               open={isOpen}

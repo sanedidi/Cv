@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useState } from "react";
 import "./Hero.scss";
 const Hero = () => {
@@ -67,13 +67,10 @@ const Hero = () => {
         <div className="hero__wrapper">
           <div className="bat"></div>
           <div className="hero__bur">
-            <button className="hero__btn" onClick={toggleDrawer}>
+            <button className="hero__btn" onClick={()=>{toggleDrawer(), notify()}}>
               {" "}
               You Need A Site?
-              <button className="hero__toast" onClick={notify}>|</button>
-              <Toaster />
-            {/* <div className="hero__toast">
-            </div> */}
+              
             </button>
             <Drawer
               open={isOpen}

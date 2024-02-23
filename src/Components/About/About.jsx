@@ -18,6 +18,13 @@ const About = () => {
               />
             </svg>
           </div>
+          <div className="about__content">
+            <div className="hero__left">
+              <a target="_blank" href="https://github.com/sanedidi/">
+                <img style={{ width: "50%" }} src={gitHub} alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

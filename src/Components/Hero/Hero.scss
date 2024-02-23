@@ -12,11 +12,20 @@
     flex-direction: column;
     padding: 0 0 50px;
   }
+  &__toast{
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+  }
   &__btn {
     padding: 10px 20px;
     background-color: #4c4747;
     color: #fff;
     font-family: random($limit: 10);
+    position: relative;
   }
   &__bur {
     display: flex;

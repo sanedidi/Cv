@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
 import Drawer from "react-modern-drawer";
-import toast, { Toaster } from "react-hot-toast";
 import "react-modern-drawer/dist/index.css";
+import toast, { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import "./Hero.scss";
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
   const handleCooperationClick = () => {
     setShowNewLatter(true);
   };
-  
+
   const handleCloseNewLatter = () => {
     setShowNewLatter(false);
     setMenuOpen(false);
@@ -22,29 +22,7 @@ const Hero = () => {
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
-  toast('Enter Your Details', {
-    duration: 1000,
-    position: 'right-top',
-  
-    // Styling
-    style: {},
-    className: '',
-  
-    // Custom Icon
-    icon: '',
-  
-    // Change colors of success/error/loading icon
-    iconTheme: {
-      primary: '#000',
-      secondary: '#fff',
-    },
-  
-    // Aria
-    ariaProps: {
-      role: 'status',
-      'aria-live': 'polite',
-    },
-  });
+
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [Info, setInfo] = useState("");
@@ -60,7 +38,11 @@ const Hero = () => {
       },
     });
   };
-
+  // const notify = () => toast("Enter Your Details.");
+  const notify = () => toast('Enter Your Details', {
+    duration:2000,
+    position: 'top-right'
+  })
   const subscribeHandler = (e) => {
     e.preventDefault();
 
@@ -74,6 +56,10 @@ const Hero = () => {
       // Additional actions upon subscription, if needed
     }
   };
+  const [isOpen1, setIsOpen1] = React.useState(false);
+  const toggleDrawer1 = () => {
+    setIsOpen((prevState) => !prevState);
+  };
 
   return (
     <section className="hero">
@@ -81,11 +67,14 @@ const Hero = () => {
         <div className="hero__wrapper">
           <div className="bat"></div>
           <div className="hero__bur">
-            <button className="hero__btn" onClick={toggleDrawer }>
+            <button className="hero__btn" onClick={toggleDrawer}>
               {" "}
               You Need A Site?
+              <button className="hero__toast" onClick={notify}>|</button>
+              <Toaster />
+            {/* <div className="hero__toast">
+            </div> */}
             </button>
-            <Toaster />
             <Drawer
               open={isOpen}
               onClose={toggleDrawer}

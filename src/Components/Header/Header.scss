@@ -1,0 +1,37 @@
+.header{
+    &__text{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+      gap: 20px;
+      p{
+        font-size: clamp(1.25rem, 1.046rem + 1.02vw, 1.875rem);
+        font-weight: 400;
+        white-space: nowrap;
+        animation: scroll 100s infinite linear;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(81, 79, 79);
+        span{
+          font-weight: 500;
+          color: rgb(41, 40, 40);
+        }
+      }
+    }
+    &__title{
+      svg{
+        width: 100%;
+        max-width: 1300px;
+      }
+    }
+}
+
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-5000px);
+  }
+}

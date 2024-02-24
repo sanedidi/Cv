@@ -1,0 +1,42 @@
+.projects{
+    margin: 20px 0;
+    &__wrapper{}
+    &__top{}
+    &__title{}
+    &__content{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__sides{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__item-img{
+        width: 100%;
+        img{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+    }
+    &__item-text{}
+    &__text{
+        &.bold{
+
+        }
+    }
+
+
+}

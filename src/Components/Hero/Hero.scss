@@ -12,7 +12,7 @@
     flex-direction: column;
     padding: 0 0 50px;
   }
-  &__toast{
+  &__toast {
     width: 100%;
     background-color: transparent;
     position: absolute;
@@ -63,23 +63,30 @@
     gap: clamp(0rem, -6.122rem + 30.61vw, 18.75rem);
     background-color: transparent;
     padding: 10px;
-    @media (max-width:600px) {
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    @media (max-width: 600px) {
       display: block;
     }
   }
-  &__title{
+  &__title {
     font-size: 30px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
 
-    @media (max-width:600px) {
+    @media (max-width: 600px) {
       display: none;
     }
   }
 }
 .EZDrawer .EZDrawer__container {
   box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.4) !important;
+}
+.EZDrawer__overlay {
+  opacity: 0.5;
 }
 .req__btn {
   width: 100%;

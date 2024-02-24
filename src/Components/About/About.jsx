@@ -104,6 +104,7 @@ const About = () => {
                     id="panel-header"
                     aria-controls="panel-content"
                   >
+                    
                     Personal interests and aspirations:
                   </AccordionSummary>
                   <AccordionDetails className='about__text'>

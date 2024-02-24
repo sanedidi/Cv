@@ -1,7 +1,13 @@
 import React from "react";
 import "./About.scss";
 import gitHub from "../../assets/github.png";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+
+
 const About = () => {
+  <Accordion slotProps={{ transition: { unmountOnExit: true } }} />;
   return (
     <section className="about">
       <div className="container">
@@ -19,10 +25,95 @@ const About = () => {
             </svg>
           </div>
           <div className="about__content">
-            <div className="hero__left">
-              <a target="_blank" href="https://github.com/sanedidi/">
-                <img style={{ width: "50%" }} src={gitHub} alt="" />
-              </a>
+            <div className="about__left">
+              <div>
+                <a target="_blank" href="https://github.com/sanedidi/">
+                  <img src={gitHub} alt="asd" />
+                </a>
+              </div>
+              <div>
+                <Accordion>
+                  <AccordionSummary
+                  className="about__ma"
+                    id="panel-header"
+                    aria-controls="panel-content"
+                  >
+                    Experience and skills
+                  </AccordionSummary>
+                  <AccordionDetails className='about__text'>
+                    My name is Shaxzod, and I'm a front-end developer with
+                    experience in creating dynamic and intuitive user
+                    interfaces. My expertise includes using modern frameworks
+                    such as React and Vue.js to build scalable and fast
+                    applications. I'm also proficient in HTML, CSS, and
+                    JavaScript, and have experience working with various tools
+                    and libraries such as Bootstrap, Sass, and jQuery.
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                  className="about__ma"
+                    id="panel-header"
+                    aria-controls="panel-content"
+                  >
+                    The possibility of cooperation:
+                  </AccordionSummary>
+                  <AccordionDetails className='about__text'>
+                    I look forward to the opportunity to apply my skills and
+                    experience to your project, collaborating to create amazing
+                    user interfaces and bring your ideas to life.
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                  className="about__ma"
+                    id="panel-header"
+                    aria-controls="panel-content"
+                  >
+                    Approach to work:
+                  </AccordionSummary>
+                  <AccordionDetails className='about__text'>
+                    My passion for technology and creative approach enable me to
+                    transform concepts into elegant web applications that are
+                    not only functional but also beautiful. I strive to create
+                    interfaces that not only meet users' functional needs but
+                    also provide an amazing user experience. My design skills
+                    and attention to detail allow me to consider every aspect of
+                    user interaction with the application, from animations to
+                    responsive design for mobile devices.
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                  className="about__ma"
+                    id="panel-header"
+                    aria-controls="panel-content"
+                  >
+                    Communication and teamwork:
+                  </AccordionSummary>
+                  <AccordionDetails className='about__text'>
+                    I also value communication and teamwork. Through my
+                    experience working on group projects, I've learned to
+                    effectively communicate with team members, establish clear
+                    processes, and achieve common goals.
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                  className="about__ma"
+                    id="panel-header"
+                    aria-controls="panel-content"
+                  >
+                    Personal interests and aspirations:
+                  </AccordionSummary>
+                  <AccordionDetails className='about__text'>
+                    In my free time, I continue to explore new technologies,
+                    participate in developer communities, and share my knowledge
+                    through webinars and meetups. I'm passionate about writing
+                    quality code and constantly strive for professional growth.
+                  </AccordionDetails>
+                </Accordion>
+              </div>
             </div>
           </div>
         </div>

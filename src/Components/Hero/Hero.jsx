@@ -39,10 +39,11 @@ const Hero = () => {
     });
   };
   // const notify = () => toast("Enter Your Details.");
-  const notify = () => toast('Enter Your Details', {
-    duration:2000,
-    position: 'top-right'
-  })
+  const notify = () =>
+    toast("Enter Your Details", {
+      duration: 2000,
+      position: "top-right",
+    });
   const subscribeHandler = (e) => {
     e.preventDefault();
 
@@ -67,16 +68,26 @@ const Hero = () => {
         <div className="hero__wrapper">
           <div className="bat"></div>
           <div className="hero__bur">
-            <button className="hero__btn" onClick={()=>{toggleDrawer(), notify()}}>
+            <button
+              className="hero__btn"
+              onClick={() => {
+                toggleDrawer(), notify();
+              }}
+            >
               {" "}
-              You Need A Site?
+              Press Here!
             </button>
+            
             <Drawer
               open={isOpen}
               onClose={toggleDrawer}
               direction="top"
               className="bla bla bla"
             >
+              <div className="hero__gg">
+                <h2 className="hero__title">Need A Cool Site?</h2>
+                <h2 className="hero__title">Leave A Request</h2>
+              </div>
               <div className="hero__form">
                 <form onSubmit={subscribeHandler}>
                   <input

@@ -114,7 +114,7 @@ const Projects = () => {
                 <img src={img} alt="" />
               </div>
             ):(
-                <div className="default">
+                <div className="projects__sides default">
                     <img src={pr} alt="" />
                 </div>
             )}

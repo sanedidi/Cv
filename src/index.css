@@ -71,5 +71,19 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+  
 }
+
+
+input::selection {
+  background-color: white; /* Цвет фона для выбранного текста */
+  color: black; /* Цвет текста для выбранного текста */
+}
+
+/* caret-color устанавливает цвет мигающего курсора внутри input */
+input {
+  caret-color: white; /* Замените "red" на желаемый цвет */
+}
+
+
 

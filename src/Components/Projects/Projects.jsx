@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.scss";
 import board from "../../assets/board.png";
+import pr from '../../assets/pr.png'
 import proflist from "../../assets/proflist.png";
 import land from "../../assets/land.png";
 import razer from "../../assets/razer.png";
@@ -108,10 +109,14 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            {img && (
+            {img ? (
               <div className="projects__sides glob">
                 <img src={img} alt="" />
               </div>
+            ):(
+                <div className="default">
+                    <img src={pr} alt="" />
+                </div>
             )}
           </div>
         </div>

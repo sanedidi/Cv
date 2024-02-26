@@ -25,8 +25,20 @@
       }
     }
 }
-
-
+.req__text {
+  border: 1px solid rgba(255, 255, 255, 0.452);
+}
+.hero__btn{
+  background-color: #d6d6d6 !important;
+  color: black !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500 !important;
+  caret-color: red !important;
+  ::selection {
+    background-color: red; /* Цвет фона для выбранного текста */
+    color: red; /* Цвет текста для выбранного текста */
+  }
+}
 @keyframes scroll {
   0%{
     transform: translateX(0);

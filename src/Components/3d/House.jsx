@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.scss'; 
+import './House.scss'; 
 import { useEffect } from 'react';
 
 const House = () => {
@@ -26,7 +26,6 @@ const House = () => {
       }, []);
     
   return (
-    <div className="jalla">
     <div className="house" id="h">
       <div className="shadows">
         <div className="shadow-a"></div>
@@ -42,6 +41,7 @@ const House = () => {
         <div className="al__bottom face"></div>
       </div>
 
+      {/* div.ab */}
       <div className="ab">
         <div className="ab__front face"></div>
         <div className="ab__back face"></div>
@@ -51,6 +51,7 @@ const House = () => {
         <div className="ab__bottom face"></div>
       </div>
 
+      {/* div.at */}
       <div className="at">
         <div className="at__front face"></div>
         <div className="at__back face"></div>
@@ -60,6 +61,7 @@ const House = () => {
         <div className="at__bottom face"></div>
       </div>
 
+      {/* div.ac */}
       <div className="ac">
         <div className="ac__front face"></div>
         <div className="ac__back face"></div>
@@ -164,6 +166,8 @@ const House = () => {
         <div className="cmt__top face"></div>
         <div className="cmt__bottom face"></div>
     </div>
+    //-----------------------
+    //-----------------------
                 
     <div className="dl">
         <div className="dl__front face"></div> 
@@ -189,11 +193,15 @@ const House = () => {
         <div className="dt__top face"></div>
         <div className="dt__bottom face"></div>
     </div>
+    //-----------------------            
+    //-----------------------   
          
-     <div className="el__front face"></div>
-     <div className="ec__front face"></div>
-     <div className="er__right face"></div>
-     <div className="eb__back face"></div>
+    div.el: <div className="el__front face"></div>
+    div.ec: <div className="ec__front face"></div>
+    div.er: <div className="er__right face"></div>
+    div.eb: <div className="eb__back face"></div>
+    //-----------------------            
+    //-----------------------            
     <div className="fl">
         <div className="fl__front face"></div>
         <div className="fl__back face"></div>
@@ -219,6 +227,8 @@ const House = () => {
         <div className="fb__bottom face"></div>
     </div>
  
+    //-----------------------
+    //-----------------------
     <div className="table">
         <div className="table__front face"></div> 
         <div className="table__back face"></div>
@@ -339,8 +349,6 @@ const House = () => {
         <div className="door-t__top face"></div>
         <div className="door-t__bottom face"></div>
     </div>
-    </div>
-
     </div>
   );
 };

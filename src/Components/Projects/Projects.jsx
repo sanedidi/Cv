@@ -19,8 +19,7 @@ const Projects = () => {
             <h2 className="projects__title">Projects</h2>
           </div>
           <div className="projects__content">
-            <div className="projects__sides">
-              <div className="projects__items">
+            <div className="projects__box">
                 <div
                   className="projects__item board"
                   onClick={() => setImg(board)}
@@ -69,8 +68,6 @@ const Projects = () => {
                     <p className="projects__text bold">Sneacker District</p>
                   </div>
                 </div>
-              </div>
-              <div className="projects__items">
                 <div
                   className="projects__item razer"
                   onClick={() => setImg(razer)}
@@ -107,7 +104,6 @@ const Projects = () => {
                     <p className="projects__text bold">Panda</p>
                   </div>
                 </div>
-              </div>
             </div>
             {img ? (
               <div className="projects__sides glob">

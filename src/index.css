@@ -87,3 +87,22 @@ input {
 
 
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b9b2b2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6e6969;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}

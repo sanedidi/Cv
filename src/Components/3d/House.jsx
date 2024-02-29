@@ -129,7 +129,7 @@ const House = () => {
     <div className="cc">
         <div className="cc__front face"></div> 
         <div className="cc__back face"></div>
-        <div className="cc__right face"></div>
+        <div className="cc__right face">jalaaaa</div>
         <div className="cc__left face"></div>
         <div className="cc__top face"></div>
         <div className="cc__bottom face"></div>

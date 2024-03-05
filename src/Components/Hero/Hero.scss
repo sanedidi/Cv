@@ -60,6 +60,7 @@
     .bla.bla.bla {
       background-color: transparent;
       padding: 10px;
+      backdrop-filter: blur(8px);
     }
   }
   .EZDrawer .EZDrawer__container {
@@ -69,4 +70,8 @@
     width: 100%;
     padding: 10px 0;
     background-color: transparent;
+  }
+
+  .req__text{
+    color: #fff;
   }
